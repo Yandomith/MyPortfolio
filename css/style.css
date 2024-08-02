@@ -44,22 +44,21 @@ body {
 }
 
 .card{
-    width: 20rem;
-    margin: 3rem;
     background-color: #181818;
     border: none;
+    padding: 1 rem;
 }
 .card-title{
     text-align: left;
     font-size:1.5rem ;
+    padding-top: 2vh;
 }
 a{
     text-decoration: none;
     
 }
 
-/* img{
-    height: 20px;
-    width: 100%;
-    object-fit: cover;
-} */
+.card-text{
+    text-align: left;
+}
+
