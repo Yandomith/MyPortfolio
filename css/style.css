@@ -3,7 +3,6 @@ body {
     background-color: #181818;
     font-family: "Marcellus", serif;
     color: #FAF9F9;
-
 }
 
 .navbar-brand{
@@ -39,6 +38,27 @@ body {
     border: 2px #805F49 solid;
 }
 
-.img{
-    max-height: 500px;
+
+.categorytitle{
+    padding-bottom: 20px;
+}
+.card{
+    width: 30rem;
+    margin: 3rem;
+    background-color: #181818;
+    border: none;
+}
+.card-title{
+    text-align: left;
+    font-size:1.5rem ;
+}
+a{
+    text-decoration: none;
+    
+}
+
+img{
+    height: 20px;
+    width: 100%;
+    object-fit: cover;
 }
