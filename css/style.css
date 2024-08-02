@@ -1,0 +1,44 @@
+body {
+    scroll-behavior:smooth ;
+    background-color: #181818;
+    font-family: "Marcellus", serif;
+    color: #FAF9F9;
+
+}
+
+.navbar-brand{
+    color: #FAF9F9;
+    font-size: x-large;
+ 
+}
+.nav-link{
+    color: #FAF9F9;
+}
+
+.main{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+
+}    
+
+.intro-title{
+    color: #FFD6BA;
+}
+
+.button1{
+    color: #FAF9F9;
+    background-color:#805F49;
+    border: 2px #805F49 solid;
+    
+}
+
+.button2{
+    color: #FAF9F9;
+    background-color:#181818;
+    border: 2px #805F49 solid;
+}
+
+.img{
+    max-height: 500px;
+}
