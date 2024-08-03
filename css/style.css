@@ -63,3 +63,13 @@ a{
     text-align: left;
 }
 
+.form-control{
+    background-color: #181818;
+    color: #FAF9F9;
+    border: #FFD6BA 1px solid;
+    border-radius: 0px;
+}
+
+.form-group{
+    padding-bottom: 15px;
+}
