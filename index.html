@@ -238,13 +238,13 @@
       }
 
       if ('Gyroscope' in window) {
-        const gyroscope = new Gyroscope({ frequency: 60 });
+        const gyroscope = new Gyroscope({ frequency: 10 });
 
         gyroscope.addEventListener('reading', () => {
           console.log(`Angular velocity X: ${gyroscope.x}`);
           console.log(`Angular velocity Y: ${gyroscope.y}`);
           console.log(`Angular velocity Z: ${gyroscope.z}`);
-          document.getElementById('status').innerText = `Gyroscope data - X: ${gyroscope.x}, Y: ${gyroscope.y}, Z: ${gyroscope.z}`;
+          document.getElementById('status').innerText = `Gyroscope data - X: ${gyroscope.x.toFixed(2)}, Y: ${gyroscope.y.toFixed(2)}, Z: ${gyroscope.z.toFixed(2)}`;
         });
         gyroscope.start();
       } else {
