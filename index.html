@@ -25,17 +25,17 @@
 <body>
   <div class="container">
     <div class="row">
-      <nav id="navbar " class="navbar px-3 mb-1">
-        <a class="navbar-brand" href="#">Nbar</a>
-        <ul class="nav ">
+      <nav id="navbar" class="navbar px-3 mb-1">
+        <a class="navbar-brand" href="#">Yando Smith</a>
+        <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Work</a>
+            <a class="nav-link" href="work.html">Work</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contactme">Contact</a>
           </li>
         </ul>
       </nav>
@@ -45,13 +45,14 @@
   <header class="main container">
     <div class="row">
       <div class="col-md-6 display-1 intro-title ">Unleashing the Power of Pixels</div>
-      <div class="col-md-6 fs-5 pt-3 px-5 text-start">Hi, I'm Yando Smith - a multifaceted creative professional
+      <div class="col-md-6 fs-5 pt-3 px-5 text-start">Hi, I'm Yando Smith - a creative professional
         specializing in game development, graphic design, and web development. Explore my portfolio to see how I can
         bring your digital vision to life.
         <div class="row pt-3 gap-2">
           <div class="col-md-auto"><button type="button" class="button1" id="view-portfolio">View Portfolio</button>
           </div>
-          <div class="col-md-auto"><button type="button" class="button2">Contact</button>
+          <div class="col-md-auto"><button type="button" class="button2"
+              onclick="window.location.href='#contactme'">Contact Me</button>
           </div>
         </div>
 
@@ -181,7 +182,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <div class="categorytitle">Get in Touch</div>
+        <div class="categorytitle" id="contactme">Get in Touch</div>
         <div class="display-4 intro-title">Let's Collaborate</div>
         <div class="categoryabout fs-5">I'm excited to discuss your project and how I can help bring your digital vision
           to life. Fill out the form below or reach out directly to get started.
@@ -238,7 +239,7 @@
       }
 
       if ('Gyroscope' in window) {
-        const gyroscope = new Gyroscope({ frequency: 10 });
+        const gyroscope = new Gyroscope({ frequency: 60 });
 
         gyroscope.addEventListener('reading', () => {
           console.log(`Angular velocity X: ${gyroscope.x}`);
