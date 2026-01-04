@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Outfit:wght@300;400;600&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
         (function () { emailjs.init("xeY-epzfNYlf7qjqV"); })();
@@ -23,58 +24,94 @@
 <body>
     <div class="container">
         <div class="row">
-            <nav id="navbar" class="navbar px-3 mb-1">
-                <a class="navbar-brand" href="index.html">Smith Yando</a>
-                <ul class="nav">
-                    <li class="nav-item"><a class="nav-link" href="work.html">Work</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#contactme">Contact</a></li>
-                </ul>
-            </nav>
+            <nav id="navbar" class="navbar px-3 mb-1"></nav>
         </div>
     </div>
 
-    <header class="main container">
-        <div class="row">
-            <div class="col-12 display-4 intro-title">About Me</div>
-            <div class="col-12 categoryabout fs-5">A brief background, skills and experience.</div>
+    <header class="main container fade-in-up section-padding align-items-center d-flex justify-content-center"
+        style="min-height: 40vh;">
+        <div class="row text-center">
+            <div class="col-lg-8 mx-auto">
+                <div class="categorytitle">Profile</div>
+                <h1 class="display-1 intro-title mb-4">About Me</h1>
+                <p class="fs-5 px-md-5 text-muted">I'm a multidisciplinary developer and designer with a passion for
+                    building immersive digital experiences.</p>
+            </div>
         </div>
     </header>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <h3>Work Experience</h3>
-                <div class="mb-3">
-                    <h5>Game Developer — Indie Studio</h5>
-                    <p class="small text-muted">2021 - Present</p>
-                    <p>Developed gameplay systems, tools and shipped multiple titles to PC and mobile.</p>
+    <div class="container mb-5">
+        <div class="row g-5">
+            <div class="col-lg-8">
+                <!-- Experience -->
+                <div class="card glass-card p-5 border-0 mb-5">
+                    <h3 class="intro-title mb-4">Work Experience</h3>
+
+                    <div class="mb-5">
+                        <div class="d-flex justify-content-between align-items-baseline mb-2">
+                            <h5 class="mb-0 h4">Game Developer</h5>
+                            <span class="badge rounded-pill border border-secondary text-muted fw-light">2021 -
+                                Present</span>
+                        </div>
+                        <p class="text-white opacity-75 mb-2">Indie Studio</p>
+                        <p class="text-muted">Developed core gameplay systems, optimized rendering pipelines, and
+                            shipped multiple titles to PC and mobile platforms using Unity and Unreal Engine.</p>
+                    </div>
+
+                    <div>
+                        <div class="d-flex justify-content-between align-items-baseline mb-2">
+                            <h5 class="mb-0 h4">Graphic Designer</h5>
+                            <span class="badge rounded-pill border border-secondary text-muted fw-light">2019 -
+                                2021</span>
+                        </div>
+                        <p class="text-white opacity-75 mb-2">Creative Agency</p>
+                        <p class="text-muted">Led brand identity projects, created marketing assets, and collaborated
+                            with cross-functional teams to deliver high-impact visual campaigns.</p>
+                    </div>
                 </div>
 
-                <div class="mb-3">
-                    <h5>Graphic Designer — Creative Agency</h5>
-                    <p class="small text-muted">2019 - 2021</p>
-                    <p>Worked on brand identity projects and delivered campaign assets for clients.</p>
-                </div>
+                <!-- Education -->
+                <div class="card glass-card p-5 border-0">
+                    <h3 class="intro-title mb-4">Education</h3>
 
-                <h3>Education</h3>
-                <div class="mb-3">
-                    <h5>B.Sc. in Computer Science</h5>
-                    <p class="small text-muted">University Name — 2016 - 2019</p>
-                    <p>Focused on software engineering and interactive media.</p>
+                    <div>
+                        <div class="d-flex justify-content-between align-items-baseline mb-2">
+                            <h5 class="mb-0 h4">B.Sc. in Computer Science</h5>
+                            <span class="badge rounded-pill border border-secondary text-muted fw-light">2016 -
+                                2019</span>
+                        </div>
+                        <p class="text-white opacity-75 mb-2">University Name</p>
+                        <p class="text-muted">Specialized in Software Engineering and Interactive Media. Graduated with
+                            honors.</p>
+                    </div>
                 </div>
-
             </div>
 
-            <aside class="col-md-4">
-                <h3>Skills</h3>
-                <ul>
-                    <li>Unity / Unreal Engine</li>
-                    <li>HTML, CSS, JavaScript</li>
-                    <li>Photoshop, Illustrator</li>
-                    <li>Responsive & accessible design</li>
-                    <li>Version control (Git)</li>
-                </ul>
+            <aside class="col-lg-4">
+                <div class="card glass-card p-4 border-0 position-sticky" style="top: 100px;">
+                    <h3 class="h4 intro-title mb-4">Technical Skills</h3>
+
+                    <div class="mb-4">
+                        <p class="categorytitle mb-2">Development</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-white bg-opacity-10 fw-normal p-2">Unity / C#</span>
+                            <span class="badge bg-white bg-opacity-10 fw-normal p-2">Unreal Engine / C++</span>
+                            <span class="badge bg-white bg-opacity-10 fw-normal p-2">HTML5 / CSS3</span>
+                            <span class="badge bg-white bg-opacity-10 fw-normal p-2">JavaScript (ES6+)</span>
+                            <span class="badge bg-white bg-opacity-10 fw-normal p-2">Git / Version Control</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="categorytitle mb-2">Design</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-white bg-opacity-10 fw-normal p-2">Adobe Photoshop</span>
+                            <span class="badge bg-white bg-opacity-10 fw-normal p-2">Adobe Illustrator</span>
+                            <span class="badge bg-white bg-opacity-10 fw-normal p-2">Figma / UI Design</span>
+                            <span class="badge bg-white bg-opacity-10 fw-normal p-2">3D Modeling</span>
+                        </div>
+                    </div>
+                </div>
             </aside>
         </div>
     </div>
@@ -90,6 +127,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

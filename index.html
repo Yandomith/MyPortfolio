@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Outfit:wght@300;400;600&display=swap"
+    rel="stylesheet">
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script>
     (function () {
@@ -25,153 +26,108 @@
 <body>
   <div class="container">
     <div class="row">
-      <nav id="navbar" class="navbar px-3 mb-1">
-        <a class="navbar-brand" href="#">Yando Smith</a>
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link" href="work.html">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contactme">Contact</a>
-          </li>
-        </ul>
-      </nav>
+      <nav id="navbar" class="navbar px-3 mb-1"></nav>
     </div>
   </div>
 
-  <header class="main container">
-    <div class="row">
-      <div class="col-md-6 display-1 intro-title ">Unleashing the Power of Pixels</div>
-      <div class="col-md-6 fs-5 pt-3 px-5 text-start">Hi, I'm Yando Smith - a creative professional
-        specializing in game development, graphic design, and web development. Explore my portfolio to see how I can
-        bring your digital vision to life.
-        <div class="row pt-3 gap-2">
-          <div class="col-md-auto"><button type="button" class="button1" id="view-portfolio">View Portfolio</button>
-          </div>
-          <div class="col-md-auto"><button type="button" class="button2"
-              onclick="window.location.href='#contactme'">Contact Me</button>
-          </div>
+  <header class="main container fade-in-up section-padding">
+    <div class="row align-items-center h-100">
+      <div class="col-lg-8 mx-auto text-center">
+        <h1 class="display-1 intro-title mb-4">Digital Experiences<br>That Matter</h1>
+        <p class="fs-5 px-md-5 text-muted mb-5">
+          Hi, I'm Smith Yando. I craft immersive games, stunning brands, and performant web applications.
+        </p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="#featured-work" class="btn button1 px-4 py-2">See Featured Work</a>
+          <a href="contact.html" class="btn button2 px-4 py-2">Let's Talk</a>
         </div>
-
       </div>
     </div>
   </header>
 
-  <div class="container-fluid">
-    <img src="image/top.png" class="img-fluid" alt="...">
-  </div>
-
-
-  <div class="main  container">
-    <div class="row ">
-      <div class="categorytitle">Game Development</div>
-      <div class="display-4 intro-title">Crafting Immersive Experiences</div>
-      <div class="categoryabout fs-5">From captivating narratives to seamless gameplay, I bring your game ideas to life
-        with a focus on player engagement and technical excellence.</div>
+  <!-- Services / What I Do -->
+  <section class="container mb-5 section-padding">
+    <div class="row mb-5">
+      <div class="col-12 text-center">
+        <h2 class="display-4 intro-title">What I Do</h2>
+      </div>
     </div>
-    <div class="row pt-4" id="games-list" data-max="3">
-      <!-- dynamic game cards will be injected here from data/games.json -->
+    <div class="row g-4">
+      <!-- Game Dev -->
+      <div class="col-md-4">
+        <div class="card h-100 glass-card p-4 text-center border-0">
+          <div class="mb-3 display-4">🎮</div>
+          <h3 class="h4 mb-3">Game Development</h3>
+          <p class="text-muted">Designing immersive mechanics and building robust systems in Unity and Unreal.</p>
+        </div>
+      </div>
+      <!-- Web Dev -->
+      <div class="col-md-4">
+        <div class="card h-100 glass-card p-4 text-center border-0">
+          <div class="mb-3 display-4">💻</div>
+          <h3 class="h4 mb-3">Web Development</h3>
+          <p class="text-muted">Creating responsive, accessible, and fast web applications using modern tech stacks.</p>
+        </div>
+      </div>
+      <!-- Graphic Design -->
+      <div class="col-md-4">
+        <div class="card h-100 glass-card p-4 text-center border-0">
+          <div class="mb-3 display-4">🎨</div>
+          <h3 class="h4 mb-3">Graphic Design</h3>
+          <p class="text-muted">Crafting visual identities, logos, and UI assets that communicate clearly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Work -->
+  <section id="featured-work" class="container mb-5 section-padding">
+    <div class="row mb-5">
+      <div class="col-12 text-center">
+        <h2 class="display-4 intro-title">Featured Projects</h2>
+        <p class="text-muted">A selection of my recent work.</p>
+      </div>
     </div>
 
-    <div class="row mt-3">
+    <div id="featured-projects" class="row g-4">
+      <!-- Injected by js/projects.js -->
+    </div>
+
+    <div class="row mt-5">
       <div class="col text-center">
-        <a href="game.html" class="btn button1 px-4">More Projects</a>
+        <a href="work.html" class="btn button1 px-5 py-3">View All Projects</a>
       </div>
     </div>
-  </div>
-
-
-  <div class="main container">
-    <div class="row">
-      <div class="categorytitle">Graphic Design</div>
-      <div class="display-4 intro-title">Visually Captivating Designs</div>
-      <div class="categoryabout fs-5">From eye-catching branding to stunning illustrations, I create visually compelling
-        designs that leave a lasting impression.</div>
-    </div>
-
-    <div class="row pt-4">
-      <div class="col-md-6 order-md-2">
-        <img src="image/project_image.png" alt="" class="img-fluid">
-      </div>
-
-      <div class="col-md-6 order-md-1">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Logo Design</h5>
-            <p class="card-text">Crafting memorable and impactful brand identities.</p>
-            <a href="#" class=""><button type="button" class="button1 py-1 w-100">Go somewhere</button> </a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Social Media Post Design</h5>
-            <p class="card-text">Bringing ideas to life through captivating visuals.</p>
-            <a href="#" class=""><button type="button" class="button1 py-1 w-100">Go somewhere</button> </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="main  container">
-    <div class="row">
-      <div class="categorytitle">Web Development</div>
-      <div class="display-4 intro-title">Crafting Exceptional Web Experiences</div>
-      <div class="categoryabout fs-5">From responsive and accessible websites to dynamic web applications, I bring your
-        digital vision to life with clean code and a focus on user experience.
-      </div>
-    </div>
-
-    <div class="row pt-4">
-      <div class="col-md-6 order-md-2">
-        <img src="image/project_image.png" alt="" class="img-fluid">
-      </div>
-
-      <div class="col-md-6 order-md-1">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Responsive Design</h5>
-            <p class="card-text">Crafting websites that adapt seamlessly to any device.</p>
-            <a href="#" class=""><button type="button" class="button1 py-1 w-100">Go somewhere</button> </a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Web Applications</h5>
-            <p class="card-text">Building dynamic and interactive web applications.</p>
-            <a href="#" class=""><button type="button" class="button1 py-1 w-100">Go somewhere</button> </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  </section>
 
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
-        <div class="categorytitle" id="contactme">Get in Touch</div>
-        <div class="display-4 intro-title">Let's Collaborate</div>
-        <div class="categoryabout fs-5">I'm excited to discuss your project and how I can help bring your digital vision
-          to life. Fill out the form below or reach out directly to get started.
-        </div>
+      <div class="col-lg-8 mx-auto">
+        <div class="card glass-card p-5 border-0">
+          <div class="text-center mb-4">
+            <div class="categorytitle" id="contactme">Get in Touch</div>
+            <h2 class="display-4 intro-title">Let's Collaborate</h2>
+            <p class="text-muted">I'm excited to discuss your project. Fill out the form below to get started.</p>
+          </div>
 
-        <form id="contact-form" class=" pt-2">
-          <div class="form-group">
-            <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
-          </div>
-          <div class="form-group">
-            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-          </div>
-          <div class="form-group">
-            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message"
-              required></textarea>
-          </div>
-          <button type="submit" class="button1 w-100">Send</button>
-        </form>
-        <p id="status"></p>
+          <form id="contact-form">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+              </div>
+              <div class="col-12">
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="button1 w-100">Send Message</button>
+              </div>
+            </div>
+          </form>
+          <p id="status" class="mt-3 text-center"></p>
+        </div>
       </div>
 
     </div>
@@ -230,7 +186,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
-  <script src="js/games.js"></script>
+  <script src="js/projects-data.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
