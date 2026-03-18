@@ -2,8 +2,8 @@ function renderExperience() {
     const list = document.getElementById('experience-list');
     if (!list) return;
 
-    list.innerHTML = ABOUT_DATA.experience.map(item => `
-        <div class="mb-5 last-no-margin">
+    list.innerHTML = ABOUT_DATA.experience.map((item, index) => `
+        <div class="${index < ABOUT_DATA.experience.length - 1 ? 'mb-5' : ''}">
             <div class="d-flex justify-content-between align-items-baseline mb-2">
                 <h5 class="mb-0 h4">${item.role}</h5>
                 <span class="badge rounded-pill border border-secondary text-muted fw-light">${item.period}</span>
@@ -35,9 +35,15 @@ function renderSkills() {
     if (!list) return;
 
     let html = '';
-    for (const [category, skills] of Object.entries(ABOUT_DATA.skills)) {
+    const skillGroups = Array.isArray(ABOUT_DATA.skills)
+        ? ABOUT_DATA.skills
+        : Object.entries(ABOUT_DATA.skills).map(([ category, items ]) => ({ category, items }));
+
+    for (const [ index, group ] of skillGroups.entries()) {
+        const category = group.category;
+        const skills = group.items || [];
         html += `
-            <div class="mb-4 last-no-margin">
+            <div class="${index < skillGroups.length - 1 ? 'mb-4' : ''}">
                 <p class="categorytitle mb-2">${category}</p>
                 <div class="d-flex flex-wrap gap-2">
                     ${skills.map(skill => `

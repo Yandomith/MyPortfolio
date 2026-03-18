@@ -11,6 +11,47 @@ const ABOUT_DATA = {
             company: "Creative Agency",
             period: "2019 - 2021",
             description: "Led brand identity projects, created marketing assets, and collaborated with cross-functional teams to deliver high-impact visual campaigns."
+        },
+        {
+            role: "Graphic Designer",
+            company: "Creative Agency",
+            period: "2019 - 2021",
+            description: "Led brand identity projects, created marketing assets, and collaborated with cross-functional teams to deliver high-impact visual campaigns."
+        }
+        ,
+        {
+            role: "Graphic Designer",
+            company: "Creative Agency",
+            period: "2019 - 2021",
+            description: "Led brand identity projects, created marketing assets, and collaborated with cross-functional teams to deliver high-impact visual campaigns."
+        }
+        ,
+        {
+            role: "Graphic Designer",
+            company: "Creative Agency",
+            period: "2019 - 2021",
+            description: "Led brand identity projects, created marketing assets, and collaborated with cross-functional teams to deliver high-impact visual campaigns."
+        }
+        ,
+        {
+            role: "Graphic Designer",
+            company: "Creative Agency",
+            period: "2019 - 2021",
+            description: "Led brand identity projects, created marketing assets, and collaborated with cross-functional teams to deliver high-impact visual campaigns."
+        }
+        ,
+        {
+            role: "Graphic Designer",
+            company: "Creative Agency",
+            period: "2019 - 2021",
+            description: "Led brand identity projects, created marketing assets, and collaborated with cross-functional teams to deliver high-impact visual campaigns."
+        }
+        ,
+        {
+            role: "Graphic Designer",
+            company: "Creative Agency",
+            period: "2019 - 2021",
+            description: "Led brand identity projects, created marketing assets, and collaborated with cross-functional teams to deliver high-impact visual campaigns."
         }
     ],
     education: [
@@ -19,21 +60,72 @@ const ABOUT_DATA = {
             school: "University Name",
             period: "2016 - 2019",
             description: "Specialized in Software Engineering and Interactive Media. Graduated with honors."
+        },
+        {
+            degree: "B.Sc. in Computer Science",
+            school: "University Name",
+            period: "2016 - 2019",
+            description: "Specialized in Software Engineering and Interactive Media. Graduated with honors."
+        },
+        {
+            degree: "B.Sc. in Computer Science",
+            school: "University Name",
+            period: "2016 - 2019",
+            description: "Specialized in Software Engineering and Interactive Media. Graduated with honors."
+        },
+        {
+            degree: "B.Sc. in Computer Science",
+            school: "University Name",
+            period: "2016 - 2019",
+            description: "Specialized in Software Engineering and Interactive Media. Graduated with honors."
+        }
+        ,
+        {
+            degree: "B.Sc. in Computer Science",
+            school: "University Name",
+            period: "2016 - 2019",
+            description: "Specialized in Software Engineering and Interactive Media. Graduated with honors."
         }
     ],
-    skills: {
-        "Development": [
-            "Unity / C#",
-            "Unreal Engine / C++",
-            "HTML5 / CSS3",
-            "JavaScript (ES6+)",
-            "Git / Version Control"
-        ],
-        "Design": [
-            "Adobe Photoshop",
-            "Adobe Illustrator",
-            "Figma / UI Design",
-            "3D Modeling"
-        ]
-    }
+    skills: [
+        {
+            category: "Development",
+            items: [
+                "Unity / C#",
+                "Unreal Engine / C++",
+                "HTML5 / CSS3",
+                "JavaScript (ES6+)",
+                "Git / Version Control"
+            ]
+        },
+        {
+            category: "Design",
+            items: [
+                "Adobe Photoshop",
+                "Adobe Illustrator",
+                "Figma / UI Design",
+                "3D Modeling"
+            ]
+        }
+        ,
+        {
+            category: "Design",
+            items: [
+                "Adobe Photoshop",
+                "Adobe Illustrator",
+                "Figma / UI Design",
+                "3D Modeling"
+            ]
+        }
+        ,
+        {
+            category: "Design",
+            items: [
+                "Adobe Photoshop",
+                "Adobe Illustrator",
+                "Figma / UI Design",
+                "3D Modeling"
+            ]
+        }
+    ]
 };
