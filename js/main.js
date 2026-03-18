@@ -7,7 +7,7 @@ function renderNavbar() {
     const isWork = currentPath.includes('work.html') || currentPath.includes('game-project.html');
     const isAbout = currentPath.includes('about.html');
     const isContact = currentPath.includes('contact.html');
-    
+
     navbarContainer.innerHTML = `
         <div class="container-fluid d-flex justify-content-between align-items-center">
             <a class="navbar-brand" href="index.html">Smith Yando</a>
@@ -45,7 +45,7 @@ function closeMobileMenu() {
 
 document.addEventListener('DOMContentLoaded', () => {
     renderNavbar();
-    
+
     // Scroll Animation Observer
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.1 });
 
     document.querySelectorAll('.fade-in-up').forEach((el) => observer.observe(el));
-    
+
     // Navbar Scroll Effect
     const navbar = document.getElementById('navbar');
     if (navbar) {
