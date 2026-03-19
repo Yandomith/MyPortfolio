@@ -1,130 +1,108 @@
 const ABOUT_DATA = {
     experience: [
         {
-            role: "Game Developer",
-            company: "Indie Studio",
-            period: "2021 - Present",
-            description: "Developed core gameplay systems, optimized rendering pipelines, and shipped multiple titles to PC and mobile platforms using Unity and Unreal Engine."
+            role: "Jr. Game Developer",
+            company: "RPA Nepal Pvt. Ltd.",
+            period: "Nov 2024 - Present",
+            description: "Developed and refined game mechanics, optimized performance through debugging and code improvements, and collaborated with artists/designers to deliver higher quality gameplay features."
+        },
+        {
+            role: "Game Development Intern",
+            company: "RPA Nepal Pvt. Ltd.",
+            period: "Aug 2024 - Nov 2024",
+            description: "Designed and implemented gameplay mechanics, solved technical challenges, supported feature development, and helped organize game assets and tooling research."
         },
         {
             role: "Graphic Designer",
-            company: "Creative Agency",
-            period: "2019 - 2021",
-            description: "Led brand identity projects, created marketing assets, and collaborated with cross-functional teams to deliver high-impact visual campaigns."
+            company: "Ikran Innovation",
+            period: "Jan 2024 - Mar 2024",
+            description: "Managed social media handling and post design, and created website/UI design assets for the company\'s IT projects and services."
         },
         {
             role: "Graphic Designer",
-            company: "Creative Agency",
-            period: "2019 - 2021",
-            description: "Led brand identity projects, created marketing assets, and collaborated with cross-functional teams to deliver high-impact visual campaigns."
-        }
-        ,
+            company: "Seaspray",
+            period: "Jan 2024 - Mar 2024",
+            description: "Managed social media handling and post design for a fashion and product brand, with a focus on product retouching and ecommerce-related visual work."
+        },
         {
-            role: "Graphic Designer",
-            company: "Creative Agency",
-            period: "2019 - 2021",
-            description: "Led brand identity projects, created marketing assets, and collaborated with cross-functional teams to deliver high-impact visual campaigns."
-        }
-        ,
+            role: "Freelance Graphic Designer",
+            company: "Fiverr and Upwork",
+            period: "2021 - 2023",
+            description: "Delivered graphic design work for clients including photo editing, restoration, product retouching, social content, and logo design for multiple brands."
+        },
         {
-            role: "Graphic Designer",
-            company: "Creative Agency",
-            period: "2019 - 2021",
-            description: "Led brand identity projects, created marketing assets, and collaborated with cross-functional teams to deliver high-impact visual campaigns."
-        }
-        ,
-        {
-            role: "Graphic Designer",
-            company: "Creative Agency",
-            period: "2019 - 2021",
-            description: "Led brand identity projects, created marketing assets, and collaborated with cross-functional teams to deliver high-impact visual campaigns."
-        }
-        ,
-        {
-            role: "Graphic Designer",
-            company: "Creative Agency",
-            period: "2019 - 2021",
-            description: "Led brand identity projects, created marketing assets, and collaborated with cross-functional teams to deliver high-impact visual campaigns."
-        }
-        ,
-        {
-            role: "Graphic Designer",
-            company: "Creative Agency",
-            period: "2019 - 2021",
-            description: "Led brand identity projects, created marketing assets, and collaborated with cross-functional teams to deliver high-impact visual campaigns."
+            role: "Home Tuition Tutor",
+            company: "Self-Employed",
+            period: "2020",
+            description: "Taught English grammar and computer science to middle school students."
         }
     ],
     education: [
         {
-            degree: "B.Sc. in Computer Science",
-            school: "University Name",
-            period: "2016 - 2019",
-            description: "Specialized in Software Engineering and Interactive Media. Graduated with honors."
+            degree: "Bachelor in Information Technology",
+            school: "Texas College Of Management And IT",
+            period: "2025",
+            description: "Undergraduate IT studies focused on software, web, and practical development skills."
         },
         {
-            degree: "B.Sc. in Computer Science",
-            school: "University Name",
-            period: "2016 - 2019",
-            description: "Specialized in Software Engineering and Interactive Media. Graduated with honors."
+            degree: "High School (10+2)",
+            school: "Modern College of Management And IT",
+            period: "2021",
+            description: "Completed higher secondary level with GPA 3.30."
         },
         {
-            degree: "B.Sc. in Computer Science",
-            school: "University Name",
-            period: "2016 - 2019",
-            description: "Specialized in Software Engineering and Interactive Media. Graduated with honors."
+            degree: "Secondary Education Examination",
+            school: "Mahendra Vidya Ashram",
+            period: "2019",
+            description: "Completed SEE with GPA 3.30."
         },
         {
-            degree: "B.Sc. in Computer Science",
-            school: "University Name",
-            period: "2016 - 2019",
-            description: "Specialized in Software Engineering and Interactive Media. Graduated with honors."
-        }
-        ,
+            degree: "Certificate Course in Graphic Designing",
+            school: "Animax Animation Academy",
+            period: "2019",
+            description: "Score: 93"
+        },
         {
-            degree: "B.Sc. in Computer Science",
-            school: "University Name",
-            period: "2016 - 2019",
-            description: "Specialized in Software Engineering and Interactive Media. Graduated with honors."
+            degree: "Certificate Course in Web Designing and Hosting",
+            school: "Animax Animation Academy",
+            period: "2021",
+            description: "Score: 90"
         }
     ],
     skills: [
         {
-            category: "Development",
+            category: "Graphic Designing Tools",
             items: [
-                "Unity / C#",
-                "Unreal Engine / C++",
-                "HTML5 / CSS3",
-                "JavaScript (ES6+)",
-                "Git / Version Control"
+                "Photoshop (Intermediate)",
+                "Illustrator (Intermediate)",
+                "InDesign (Intermediate)",
+                "Blender 3D (Intermediate)"
             ]
         },
         {
-            category: "Design",
+            category: "Video Editing Tools",
             items: [
-                "Adobe Photoshop",
-                "Adobe Illustrator",
-                "Figma / UI Design",
-                "3D Modeling"
+                "Adobe After Effects (Basic)",
+                "DaVinci Resolve (Basic)"
             ]
-        }
-        ,
+        },
         {
-            category: "Design",
+            category: "Game Development Tools",
             items: [
-                "Adobe Photoshop",
-                "Adobe Illustrator",
-                "Figma / UI Design",
-                "3D Modeling"
+                "Unity (Basic)",
+                "Cocos Creator (Intermediate)"
             ]
-        }
-        ,
+        },
         {
-            category: "Design",
+            category: "Languages & Frameworks",
             items: [
-                "Adobe Photoshop",
-                "Adobe Illustrator",
-                "Figma / UI Design",
-                "3D Modeling"
+                "HTML (Intermediate)",
+                "JavaScript (Intermediate)",
+                "Bootstrap (Intermediate)",
+                "C# / Unity (Basic)",
+                "Python (Basic)",
+                "Flask (Basic)",
+                "Django (Basic)"
             ]
         }
     ]

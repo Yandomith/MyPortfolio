@@ -211,6 +211,88 @@ h5,
   padding: 1.25rem 1.5rem;
 }
 
+/* Skeleton Loading */
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+}
+
+.skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.16) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: skeletonShimmer 1.2s infinite;
+}
+
+.skeleton-line {
+  height: 12px;
+  margin-bottom: 10px;
+}
+
+.skeleton-line:last-child {
+  margin-bottom: 0;
+}
+
+.skeleton-line.sm {
+  width: 35%;
+}
+
+.skeleton-line.md {
+  width: 60%;
+}
+
+.skeleton-line.lg {
+  width: 90%;
+}
+
+.skeleton-badge {
+  width: 84px;
+  height: 26px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.skeleton-card {
+  border-radius: 12px;
+  border: 1px solid var(--glass-border);
+  background: var(--card-bg);
+  overflow: hidden;
+}
+
+.skeleton-card-image {
+  height: 220px;
+  border-radius: 0;
+}
+
+.skeleton-card-body {
+  padding: 1.5rem;
+}
+
+.skeleton-card-footer {
+  padding: 0 1.5rem 1.25rem;
+}
+
+.skeleton-btn {
+  width: 100%;
+  height: 42px;
+  border-radius: 6px;
+}
+
+@keyframes skeletonShimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 /* Form Styles */
 .form-control {
   background: rgba(255, 255, 255, 0.03);

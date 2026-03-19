@@ -5,101 +5,78 @@
 const PROJECTS_DATA = [
     // Game Development
     {
-        "id": "galactic-odyssey",
+        "id": "rocket-cps-counter",
         "category": "game",
-        "title": "Galactic Odyssey",
+        "title": "Rocket CPS Counter",
+        "year": "2025",
+        "platforms": [ "Web", "PC" ],
+        "summary": "An interactive CPS counter game with custom animation, parallax layers, and responsive input feedback.",
+        "details": "Built and polished a click-speed counter prototype in Unity Web Player with custom visual assets, smooth animation timing, and fast feedback loops for engaging gameplay.",
+        "image": "image/project_image.png",
+        "demo_url": "https://play.unity.com/en/games/99f38f2a-8208-4ed4-bf57-d95dfcf6ea67/day1",
+        "credits": "Solo developer and designer"
+    },
+    {
+        "id": "runboyrun-endless-runner",
+        "category": "game",
+        "title": "RunBoyRun - Endless Runner",
         "year": "2023",
-        "platforms": [ "PC", "Mobile" ],
-        "summary": "An exploration-driven sci-fi game focused on narrative and atmospheric design.",
-        "details": "Led design and implementation of core gameplay systems, mission scripting, and optimization for mobile devices.",
-        "image": "image/project_image.png",
-        "demo_url": "https://example.com/galactic-odyssey",
-        "credits": "Solo developer & designer"
-    },
-    {
-        "id": "physics-prototype",
-        "category": "game",
-        "title": "Physics Prototype",
-        "year": "2022",
         "platforms": [ "PC" ],
-        "summary": "Rapid prototyping of core gameplay mechanics using Unity.",
-        "details": "Created reusable systems for movement and collision handling used across multiple prototypes.",
+        "summary": "An endless first-person cinematic runner focused on pace, movement feel, and replayability.",
+        "details": "Designed and developed an ongoing Unity endless runner project with cinematic presentation, tuned running controls, and iterative level flow improvements.",
         "image": "image/project_image.png",
-        "demo_url": "https://example.com/physics-prototype",
-        "credits": "Prototype lead"
-    },
-    {
-        "id": "physics-prototype",
-        "category": "game",
-        "title": "Physics Prototype",
-        "year": "2022",
-        "platforms": [ "PC" ],
-        "summary": "Rapid prototyping of core gameplay mechanics using Unity.",
-        "details": "Created reusable systems for movement and collision handling used across multiple prototypes.",
-        "image": "image/project_image.png",
-        "demo_url": "https://example.com/physics-prototype",
-        "credits": "Prototype lead"
-    },
-    {
-        "id": "editor-tools",
-        "category": "game",
-        "title": "Editor Tools",
-        "year": "2021",
-        "platforms": [ "PC" ],
-        "summary": "Custom tooling to speed up level design and iteration.",
-        "details": "Built editor extensions and import pipelines to reduce iteration time by 40%.",
-        "image": "image/project_image.png",
-        "demo_url": "https://example.com/editor-tools",
-        "credits": "Tools engineer"
+        "demo_url": "https://github.com/Yandomith/runboyrun",
+        "credits": "Solo developer"
     },
 
     // Web Development
     {
-        "id": "responsive-site",
+        "id": "cbook-tasty-recipes",
         "category": "web",
-        "title": "Responsive Marketing Site",
+        "title": "CBook - Tasty Recipes",
         "year": "2023",
         "platforms": [ "Web" ],
-        "summary": "A fully responsive marketing site with performant assets and accessible markup.",
-        "details": "Implemented a mobile-first design system using modern CSS grid and flexbox.",
+        "summary": "A recipe-sharing web app where users can explore and submit popular recipes.",
+        "details": "Implemented core recipe listing and submission flows using HTML, CSS, JavaScript, Flask, JSON, and Python with a clean interface for browsing and sharing.",
         "image": "image/project_image.png",
-        "demo_url": "#",
-        "credits": "Frontend Developer"
+        "demo_url": "https://yandomith.github.io/WTproject/",
+        "credits": "Full-stack developer"
     },
     {
-        "id": "web-app",
+        "id": "handwriting-homework-generator",
         "category": "web",
-        "title": "Single Page Web App",
-        "year": "2022",
+        "title": "Handwriting Homework Generator",
+        "year": "2023",
         "platforms": [ "Web" ],
-        "summary": "A performant single-page application focused on usability and state management.",
-        "details": "Built with vanilla JS and custom state management to ensure high performance on low-end devices.",
+        "summary": "A utility site that converts pasted text into handwritten-style homework images.",
+        "details": "Built frontend generation logic and text handling workflow to produce handwriting-like output images from user-provided content for quick assignment formatting.",
         "image": "image/project_image.png",
-        "demo_url": "#",
-        "credits": "Full Stack Developer"
+        "demo_url": "https://github.com/Yandomith/HWsite/tree/v0.0.1-alpha",
+        "credits": "Frontend and utility logic developer"
+    },
+    {
+        "id": "handmedown-ecommerce",
+        "category": "web",
+        "title": "HandMeDown Ecommerce Site",
+        "year": "2024",
+        "platforms": [ "Web" ],
+        "summary": "A second-hand product marketplace concept focused on practical listing and browsing workflows.",
+        "details": "Developed a Django-based ecommerce platform prototype using Django, HTML, CSS, JavaScript, and SQLite for product listing, browsing, and core marketplace interactions.",
+        "image": "image/project_image.png",
+        "credits": "Full-stack developer"
     },
 
     // Graphic Design
     {
-        "id": "logo-series",
+        "id": "past-graphic-designs",
         "category": "graphic",
-        "title": "Logo Series",
-        "year": "2022",
-        "platforms": [ "Print", "Digital" ],
-        "summary": "A set of logos crafted for various brand identities.",
-        "details": "Exploration of typography and negative space to create memorable brand marks.",
+        "title": "Past Graphic Design Collection",
+        "year": "2023",
+        "platforms": [ "Social Media", "Branding", "Ecommerce" ],
+        "summary": "A curated collection of branding, social media creatives, product retouching, and marketing visuals.",
+        "details": "Produced diverse design deliverables across freelance and agency contexts, including brand identities, post creatives, product edits, and campaign visuals.",
         "image": "image/project_image.png",
-        "credits": "Graphic Designer"
-    },
-    {
-        "id": "poster-campaign",
-        "category": "graphic",
-        "title": "Poster Campaign",
-        "year": "2021",
-        "platforms": [ "Print" ],
-        "summary": "Campaign artwork and layouts for print and social media.",
-        "details": "Designed high-impact visuals for a local music festival.",
-        "image": "image/project_image.png",
-        "credits": "Graphic Designer"
+        "demo_url": "https://drive.google.com/drive/folders/1AS1sOHdwL9RZx-wSycDrMNu2dM4TKTr?usp=drive_link",
+        "credits": "Graphic designer"
     }
 ];
