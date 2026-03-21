@@ -9,7 +9,7 @@ function renderNavbar() {
     const isContact = currentPath.includes('contact.html');
 
     navbarContainer.innerHTML = `
-        <div class="container-fluid d-flex justify-content-between align-items-center">
+        <div class="container d-flex justify-content-between align-items-center">
             <a class="navbar-brand" href="index.html">Smith Yando</a>
             
             <button class="navbar-toggler" type="button" aria-label="Toggle navigation" onclick="toggleMobileMenu()">
