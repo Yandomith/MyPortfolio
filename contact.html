@@ -17,11 +17,11 @@
       href="https://fonts.googleapis.com/css2?family=Marcellus&family=Outfit:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script defer src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
-      (function () {
+      window.addEventListener('load', function () {
         emailjs.init("xeY-epzfNYlf7qjqV");
-      })();
+      });
     </script>
   </head>
 
@@ -162,8 +162,8 @@
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="js/main.js"></script>
     <script>
       // Toast notification system
       function showToast(message, type = "success") {
