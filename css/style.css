@@ -897,3 +897,66 @@ header.main.home-hero {
     stroke-dashoffset: 0;
   }
 }
+
+/* Custom Interactive Cursor
+-------------------------------------------------- */
+body {
+  cursor: none; /* Hide default cursor */
+}
+
+a, button, input, textarea, select, .card, .glass-card {
+  cursor: none; /* Hide default cursor on interactive */
+}
+
+.custom-cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent-gold);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s, height 0.2s, background-color 0.2s;
+}
+
+.custom-cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border: 2px solid rgba(212, 175, 55, 0.5); /* Semi-transparent gold */
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s, border-color 0.3s, background-color 0.3s;
+}
+
+/* Hover State */
+.custom-cursor-dot.hover {
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+}
+
+.custom-cursor-ring.hover {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(212, 175, 55, 0.1);
+  border-color: var(--accent-gold);
+  backdrop-filter: blur(2px);
+}
+
+/* Hide custom cursor completely on touch devices (revert to normal) */
+@media (hover: none) and (pointer: coarse) {
+  body, a, button, input, textarea, select, .card, .glass-card {
+    cursor: auto !important;
+  }
+  .custom-cursor-dot, .custom-cursor-ring {
+    display: none !important;
+  }
+}
