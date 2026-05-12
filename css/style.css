@@ -182,6 +182,56 @@ h5,
   color: var(--text-main);
 }
 
+/* Microinteraction: subtle game-like feel on hover and clicks */
+:root {
+  --accent-glow: rgba(212, 175, 55, 0.18);
+}
+
+/* Buttons get a snappier lift and glow */
+.button1, .button2 {
+  transition: transform 160ms cubic-bezier(0.2, 0.9, 0.2, 1), box-shadow 180ms ease, background-color 160ms ease;
+}
+
+.button1:hover, .button2:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 12px 30px var(--accent-glow);
+}
+
+.button1.pressed, .button2.pressed,
+.nav-link.pressed{
+  transform: translateY(1px) scale(0.985) !important;
+  box-shadow: none !important;
+  transition: transform 80ms ease-out;
+}
+
+/* Cards: slightly deeper lift and 3D tilt on hover */
+.card {
+  transform-origin: center bottom;
+  transition: transform 220ms cubic-bezier(0.2, 0.9, 0.2, 1), box-shadow 220ms ease;
+  will-change: transform;
+}
+
+.card:hover, .glass-card:hover {
+  transform: perspective(800px) translateY(-10px) rotateX(2deg);
+  box-shadow: 0 18px 50px rgba(0,0,0,0.45), var(--glass-shadow);
+}
+
+/* Nav links: quick press feedback */
+.nav-link {
+  transition: transform 120ms ease, color 120ms ease;
+}
+
+.nav-link:active, .nav-link.pressed {
+  transform: translateY(2px) scale(0.985);
+  color: var(--text-main) !important;
+}
+
+/* Focus-visible improvements for keyboard users */
+:where(a, button, input):focus-visible {
+  outline: 2px solid rgba(212,175,55,0.14);
+  outline-offset: 3px;
+}
+
 /* Cards & Glassmorphism */
 .card {
   background: var(--card-bg);
@@ -698,7 +748,23 @@ header.main.home-hero {
     padding-top: var(--space-page-y-mobile);
     padding-bottom: var(--space-page-y-mobile);
   }
+  .display-1 {
+    font-size: 3.5rem;
+  }
 
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-lead {
+    max-width: 100%;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
+  header.main.home-hero {
+    min-height: 58vh;
+  }
   .display-1 {
     font-size: 3.5rem;
   }
@@ -899,63 +965,4 @@ header.main.home-hero {
 
 /* Custom Interactive Cursor
 -------------------------------------------------- */
-body {
-  cursor: none; /* Hide default cursor */
-}
-
-a, button, input, textarea, select, .card, .glass-card {
-  cursor: none; /* Hide default cursor on interactive */
-}
-
-.custom-cursor-dot {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 8px;
-  height: 8px;
-  background-color: var(--accent-gold);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: width 0.2s, height 0.2s, background-color 0.2s;
-}
-
-.custom-cursor-ring {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 36px;
-  height: 36px;
-  border: 2px solid rgba(212, 175, 55, 0.5); /* Semi-transparent gold */
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9998;
-  transform: translate(-50%, -50%);
-  transition: width 0.3s, height 0.3s, border-color 0.3s, background-color 0.3s;
-}
-
-/* Hover State */
-.custom-cursor-dot.hover {
-  width: 0px;
-  height: 0px;
-  opacity: 0;
-}
-
-.custom-cursor-ring.hover {
-  width: 60px;
-  height: 60px;
-  background-color: rgba(212, 175, 55, 0.1);
-  border-color: var(--accent-gold);
-  backdrop-filter: blur(2px);
-}
-
-/* Hide custom cursor completely on touch devices (revert to normal) */
-@media (hover: none) and (pointer: coarse) {
-  body, a, button, input, textarea, select, .card, .glass-card {
-    cursor: auto !important;
-  }
-  .custom-cursor-dot, .custom-cursor-ring {
-    display: none !important;
-  }
-}
+/* custom cursor removed - native cursors are used */
