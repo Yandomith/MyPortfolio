@@ -4,6 +4,18 @@
  */
 const PROJECTS_DATA = [
   {
+    id: "run-red-line",
+    category: "game",
+    title: "RunRedLine - Android Game",
+    year: "Jun 2026 - Aug 2026",
+    platforms: ["Android"],
+    summary: "An endless driving game with procedural environments, vehicle physics, progression, and performance-focused systems.",
+    details:
+      "Built deterministic procedural chunks, object pooling, score and currency systems, car unlocking, rewarded-ad revive mechanics, UI animations, audio, spatial SFX, and optimized runtime architecture.",
+    image: "image/Run_redline.gif",
+    credits: "Unity, C#, Object Pooling, Procedural Generation, GPU Instancing, Spatial Audio, Git",
+  },
+  {
     id: "pcg-grass",
     category: "game",
     title: "PCG Grass - Procedurally Generated Grass",
@@ -12,7 +24,8 @@ const PROJECTS_DATA = [
     summary: "A modular procedural-grass system for lightweight standalone VR and AR devices.",
     details:
       "Developed configurable grass placement with adjustable density and distribution in Unity and C#. Optimized vegetation generation for improved rendering performance and reusable integration across environments.",
-    image: "image/project_image.png",
+    image: "image/PCG-Grass.gif",
+    demo_url: "https://yandomith.github.io/PCG_Grass",
     credits: "Unity, C#, URP, Meta MR Kit, GPU Instancing, Mixed Reality, YouTube Tutorial",
   },
   {
@@ -27,18 +40,7 @@ const PROJECTS_DATA = [
     image: "image/PCG_Lightning.gif",
     credits: "Unity, C#, URP, Meta MR Kit, GPU Instancing, Mixed Reality , YouTube Tutorial",
   },
-  {
-    id: "run-red-line",
-    category: "game",
-    title: "RunRedLine - Android Game",
-    year: "Jun 2026 - Aug 2026",
-    platforms: ["Android"],
-    summary: "An endless driving game with procedural environments, vehicle physics, progression, and performance-focused systems.",
-    details:
-      "Built deterministic procedural chunks, object pooling, score and currency systems, car unlocking, rewarded-ad revive mechanics, UI animations, audio, spatial SFX, and optimized runtime architecture.",
-    image: "image/Run_redline.gif",
-    credits: "Unity, C#, Object Pooling, Procedural Generation, GPU Instancing, Spatial Audio, Git",
-  },
+
   {
     id: "plinko",
     category: "game",
@@ -84,8 +86,9 @@ const PROJECTS_DATA = [
     year: "",
     platforms: ["PC"],
     summary: "A first-person endless runner with gameplay mechanics, player controls, and optimized systems.",
-    details: "Developed a Unity and C# endless runner with performance and scalability in mind, including UI and gameplay interactions.",
-    image: "image/project_image.png",
+    details: "My first attempt at creating an  game with Unity and C#.",
+    image: "image/RunBoyRun.gif",
+    demo_url: "https://yandomith.github.io/runboyrun/",
     credits: "Unity, C#, URP",
   },
   {
