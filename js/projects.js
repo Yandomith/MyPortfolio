@@ -25,10 +25,7 @@ function renderProjects(filter = 'all') {
     const card = document.createElement("div");
     card.className = "card h-100";
 
-    const img = document.createElement("img");
-    img.className = "card-img-top";
-    img.src = project.image || "image/project_image.png";
-    img.alt = project.title || "";
+    const visual = createProjectVisual(project, index);
 
     const body = document.createElement("div");
     body.className = "card-body";
@@ -63,7 +60,7 @@ function renderProjects(filter = 'all') {
     caseA.innerText = "View details";
     footer.appendChild(caseA);
 
-    card.appendChild(img);
+    card.appendChild(visual);
     card.appendChild(body);
     card.appendChild(footer);
     col.appendChild(card);
@@ -126,10 +123,7 @@ function renderFeaturedProjects(containerId) {
         const card = document.createElement("div");
         card.className = "card h-100 glass-card"; // Using new glass-card class if available, else card
 
-        const img = document.createElement("img");
-        img.className = "card-img-top";
-        img.src = project.image || "image/project_image.png";
-        img.alt = project.title;
+        const visual = createProjectVisual(project, index);
 
         const body = document.createElement("div");
         body.className = "card-body";
@@ -159,11 +153,27 @@ function renderFeaturedProjects(containerId) {
         btn.innerText = "View Project";
 
         footer.appendChild(btn);
-        card.appendChild(img);
+        card.appendChild(visual);
         card.appendChild(body);
         card.appendChild(footer);
         col.appendChild(card);
         container.appendChild(col);
     });
+}
+
+function createProjectVisual(project, index) {
+    const visual = document.createElement("div");
+    visual.className = `project-visual project-visual--${project.category}`;
+
+    const number = document.createElement("span");
+    number.className = "project-visual-number";
+    number.textContent = String(index + 1).padStart(2, "0");
+
+    const type = document.createElement("span");
+    type.className = "project-visual-type";
+    type.textContent = project.category === "graphic" ? "Graphic Design" : "Game Development";
+
+    visual.append(number, type);
+    return visual;
 }
 

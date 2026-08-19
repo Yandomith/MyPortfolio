@@ -20,7 +20,7 @@ function renderNavbar() {
 
             <div class="nav-menu" id="navMenu">
                 <ul class="nav">
-                    <li class="nav-item"><a class="nav-link ${isWork ? "active" : ""}" href="work.html" onclick="closeMobileMenu()">Work</a></li>
+                    <li class="nav-item"><a class="nav-link ${isWork ? "active" : ""}" href="work.html" onclick="closeMobileMenu()">Projects</a></li>
                     <li class="nav-item"><a class="nav-link ${isAbout ? "active" : ""}" href="about.html" onclick="closeMobileMenu()">About</a></li>
                     <li class="nav-item"><a class="nav-link ${isContact ? "active" : ""}" href="contact.html" onclick="closeMobileMenu()">Contact</a></li>
                 </ul>
