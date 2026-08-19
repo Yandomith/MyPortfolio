@@ -52,6 +52,32 @@ const PROJECTS_DATA = [
     credits: "Cocos Creator, TypeScript, Bezier Curves, Object Pooling, Custom Path Animation",
   },
   {
+    id: "2048",
+    category: "game",
+    title: "2048 - Web Game",
+    year: "",
+    platforms: ["Web Game"],
+    summary: "A web-based 2048 game created with help from a YouTube tutorial",
+    details: "Built the game using Unity C# following a YouTube tutorial for the core mechanics and layout.",
+    image: "image/2048.gif",
+    demo_url: "https://yandomith.github.io/2048/",
+
+    credits: "Unity , C#, YouTube Tutorial",
+  },
+  {
+    id: "cps-rocket",
+    category: "game",
+    title: "CPS Rocket ",
+    year: "",
+    platforms: ["Web Game"],
+    summary: "Developed a fast-paced 3-second click challenge game in Unity with custom-drawn assets",
+    details:
+      "Developed a fast-paced click-per-second game in Unity using custom-drawn assets, where players rapidly click within a 3-second timer to increase their click count, with the final score determining how high the rocket launches.",
+    image: "image/CPS_Rocket.gif",
+    demo_url: "https://yandomith.github.io/RocketCpsCounter/",
+    credits: "Unity, C#, URP , Photoshop, ",
+  },
+  {
     id: "endless-runner",
     category: "game",
     title: "Endless Runner",
