@@ -32,7 +32,7 @@ body {
       rgba(162, 39, 184, 0.132) 0%,
       transparent 25%
     ),
-    linear-gradient(180deg, #0a0b08 0%, #050505 55%, #332a54 100%);
+    linear-gradient(180deg, #0a0b08 0%, #050505 55%, #5b387d 100%);
   min-height: 100vh;
 }
 
@@ -78,6 +78,8 @@ h5,
 .hero-lead {
   margin-left: 0 !important;
   padding-left: 0 !important;
+    display:inline !important;
+    
 }
 
 .categorytitle {
@@ -966,6 +968,18 @@ header.main.home-hero {
 .focus-card { min-height: 220px; justify-content: center; }
 .focus-card .display-4 { filter: drop-shadow(0 8px 18px rgba(212, 175, 55, 0.26)); }
 
+/* .project-visual {
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  isolation: isolate;
+} */
+
+/* Container */
 .project-visual {
   height: 220px;
   position: relative;
@@ -975,26 +989,69 @@ header.main.home-hero {
   justify-content: space-between;
   padding: 1.25rem 1.5rem;
   isolation: isolate;
+  background: #111; /* Dark fallback background */
 }
 
-.project-visual::before,
-.project-visual::after {
+
+
+
+
+
+
+
+
+.project-visual--game { background: linear-gradient(135deg, #1b1633, #5b387d 60%, #d4af37); }
+.project-visual--graphic { background: linear-gradient(135deg, #0c3138, #14716e 55%, #75e6da); }
+
+.project-visual-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.project-visual-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2; /* Sits directly over the image */
+  opacity: 1; /* Adjust how much image shines through */
+  /* mix-blend-mode: multiply; Optional: 'multiply', 'overlay', or 'soft-light' */
+  pointer-events: none;
+}
+.project-visual-overlay::before,
+.project-visual-overlay::after {
   content: "";
   position: absolute;
   z-index: -1;
   border-radius: 50%;
 }
+.project-visual-overlay::before { width: 270px; height: 270px; right: -62px; top: -108px; border: 1px solid rgba(255,255,255,.32); }
+.project-visual-overlay::after { width: 180px; height: 180px; left: -68px; bottom: -110px; background: rgba(255,255,255,.08); }
 
-.project-visual::before { width: 270px; height: 270px; right: -62px; top: -108px; border: 1px solid rgba(255,255,255,.32); }
-.project-visual::after { width: 180px; height: 180px; left: -68px; bottom: -110px; background: rgba(255,255,255,.08); }
-.project-visual--game { background: linear-gradient(135deg, #1b1633, #5b387d 60%, #d4af37); }
-.project-visual--graphic { background: linear-gradient(135deg, #0c3138, #14716e 55%, #75e6da); }
+
+.project-visual--game .project-visual-overlay {
+  background: linear-gradient(135deg, rgba(16, 13, 33,0.7), rgba(107, 57, 156, 0.5) 55%, rgba(212, 175, 55,0.7));
+}
+
+.project-visual--graphic .project-visual-overlay {
+  background: linear-gradient(135deg, rgba(12, 49, 56,0.7), rgba(20, 113, 110, 0.5) 55%, rgba(117, 230, 218,0.7));
+}
+
+
+
 
 .project-visual-number {
   font-family: var(--font-heading);
   font-size: 3.8rem;
   line-height: 1;
   color: rgba(255, 255, 255, 0.92);
+  position: relative;
+  z-index: 3;
 }
 
 .project-visual-type {
@@ -1004,6 +1061,8 @@ header.main.home-hero {
   letter-spacing: .12em;
   text-transform: uppercase;
   writing-mode: vertical-rl;
+  position: relative;
+  z-index: 3;
 }
 
 .card-body { padding: 1.65rem; }

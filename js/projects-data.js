@@ -13,7 +13,19 @@ const PROJECTS_DATA = [
     details:
       "Developed configurable grass placement with adjustable density and distribution in Unity and C#. Optimized vegetation generation for improved rendering performance and reusable integration across environments.",
     image: "image/project_image.png",
-    credits: "Unity, C#, URP, Meta MR Kit, GPU Instancing, Mixed Reality",
+    credits: "Unity, C#, URP, Meta MR Kit, GPU Instancing, Mixed Reality, YouTube Tutorial",
+  },
+  {
+    id: "pcg-lighting",
+    category: "game",
+    title: "PCG Lighting - Procedurally Generated Lighting",
+    year: "May 2026",
+    platforms: ["Unity", "Mixed Reality"],
+    summary: "A modular procedural-lighting system for lightweight standalone VR and AR devices.",
+    details:
+      "Developed a modular procedural lightning generation system in Unity using C#, featuring configurable frequency, length, branching, and intensity, optimized for low rendering and computational overhead on standalone VR, AR, and MR devices.",
+    image: "image/PCG_Lightning.gif",
+    credits: "Unity, C#, URP, Meta MR Kit, GPU Instancing, Mixed Reality , YouTube Tutorial",
   },
   {
     id: "run-red-line",
@@ -24,7 +36,7 @@ const PROJECTS_DATA = [
     summary: "An endless driving game with procedural environments, vehicle physics, progression, and performance-focused systems.",
     details:
       "Built deterministic procedural chunks, object pooling, score and currency systems, car unlocking, rewarded-ad revive mechanics, UI animations, audio, spatial SFX, and optimized runtime architecture.",
-    image: "image/project_image.png",
+    image: "image/Run_redline.gif",
     credits: "Unity, C#, Object Pooling, Procedural Generation, GPU Instancing, Spatial Audio, Git",
   },
   {
@@ -36,7 +48,7 @@ const PROJECTS_DATA = [
     summary: "A Cocos Creator Plinko game with custom path animation and performance-focused ball movement.",
     details:
       "Built ball movement with TypeScript and Bezier curves, created accurate positioning without a physics engine, and implemented object pooling, scoring, rewards, and win-calculation logic.",
-    image: "image/project_image.png",
+    image: "image/Plinko.gif",
     credits: "Cocos Creator, TypeScript, Bezier Curves, Object Pooling, Custom Path Animation",
   },
   {

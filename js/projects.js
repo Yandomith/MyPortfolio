@@ -159,9 +159,37 @@ function renderFeaturedProjects(containerId) {
   });
 }
 
+// function createProjectVisual(project, index) {
+//   const visual = document.createElement("div");
+//   visual.className = `project-visual project-visual--${project.category}`;
+
+//   const number = document.createElement("span");
+//   number.className = "project-visual-number";
+//   number.textContent = String(index + 1).padStart(2, "0");
+
+//   const type = document.createElement("span");
+//   type.className = "project-visual-type";
+//   type.textContent = project.category === "graphic" ? "Graphic Design" : "Game Development";
+
+//   const image = document.createElement("img");
+//   image.className = "project-visual-image";
+//   image.src = project.image || "image/project_image.png";
+
+//   visual.append(image, number, type);
+//   return visual;
+// }
+
 function createProjectVisual(project, index) {
   const visual = document.createElement("div");
   visual.className = `project-visual project-visual--${project.category}`;
+
+  const image = document.createElement("img");
+  image.className = "project-visual-image";
+  image.src = project.image || "image/project_image.png";
+
+  // Create dedicated gradient overlay layer
+  const overlay = document.createElement("div");
+  overlay.className = "project-visual-overlay";
 
   const number = document.createElement("span");
   number.className = "project-visual-number";
@@ -171,6 +199,7 @@ function createProjectVisual(project, index) {
   type.className = "project-visual-type";
   type.textContent = project.category === "graphic" ? "Graphic Design" : "Game Development";
 
-  visual.append(number, type);
+  // Append in stack order: Image -> Overlay -> Text
+  visual.append(image, overlay, number, type);
   return visual;
 }
