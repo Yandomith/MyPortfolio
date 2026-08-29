@@ -13,6 +13,7 @@ const PROJECTS_DATA = [
     details:
       "Built deterministic procedural chunks, object pooling, score and currency systems, car unlocking, rewarded-ad revive mechanics, UI animations, audio, spatial SFX, and optimized runtime architecture.",
     image: "image/Run_redline.gif",
+    demo_url: "https://mithyando.itch.io/red-runline",
     credits: "Unity, C#, Object Pooling, Procedural Generation, GPU Instancing, Spatial Audio, Git",
   },
   {
