@@ -29,6 +29,18 @@ const PROJECTS_DATA = [
     credits: "Unity, C#, Configurable Joints, Hinge Joints, VR Interactions, VR Physics",
   },
   {
+    id: "pcg-lighting",
+    category: "game",
+    title: "PCG Lighting - MR Procedural Lighting",
+    year: "May 2026",
+    platforms: ["Unity", "Mixed Reality"],
+    summary: "A modular procedural-lighting system for lightweight standalone VR and AR devices.",
+    details:
+      "Developed a modular procedural lightning generation system in Unity using C#, featuring configurable frequency, length, branching, and intensity, optimized for low rendering and computational overhead on standalone VR, AR, and MR devices.",
+    image: "image/PCG_Lightning.gif",
+    credits: "Unity, C#, URP, Meta MR Kit, GPU Instancing, Mixed Reality , YouTube Tutorial",
+  },
+  {
     id: "pcg-grass",
     category: "game",
     title: "PCG Grass - Procedurally Generated Grass in VR and AR",
@@ -40,18 +52,6 @@ const PROJECTS_DATA = [
     image: "image/PCG-Grass.gif",
     demo_url: "https://yandomith.github.io/PCG_Grass",
     credits: "Unity, C#, URP, Meta MR Kit, GPU Instancing, Mixed Reality, YouTube Tutorial",
-  },
-  {
-    id: "pcg-lighting",
-    category: "game",
-    title: "PCG Lighting - MR Procedural Lighting",
-    year: "May 2026",
-    platforms: ["Unity", "Mixed Reality"],
-    summary: "A modular procedural-lighting system for lightweight standalone VR and AR devices.",
-    details:
-      "Developed a modular procedural lightning generation system in Unity using C#, featuring configurable frequency, length, branching, and intensity, optimized for low rendering and computational overhead on standalone VR, AR, and MR devices.",
-    image: "image/PCG_Lightning.gif",
-    credits: "Unity, C#, URP, Meta MR Kit, GPU Instancing, Mixed Reality , YouTube Tutorial",
   },
 
   {
